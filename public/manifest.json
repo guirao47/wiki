@@ -1,0 +1,25 @@
+{
+  "name": "Wikipedia",
+  "short_name": "Wikipedia",
+  "description": "La enciclopedia libre",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "https://www.wikipedia.org/static/favicon/wikipedia.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://www.wikipedia.org/static/favicon/wikipedia.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ]
+}

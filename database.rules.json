@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "sessions": {
+      "$sessionId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['magician', 'spectator', 'accomplice', 'control', 'createdAt'])",
+        "magician": {
+          ".validate": "newData.hasChildren(['connected', 'lastSeen'])"
+        },
+        "spectator": {
+          ".validate": "newData.hasChildren(['connected', 'currentUrl', 'searchQuery'])"
+        },
+        "accomplice": {
+          ".validate": "newData.hasChildren(['connected'])"
+        },
+        "control": {
+          ".validate": "newData.hasChildren(['mode', 'forcedUrl', 'forcedQuery'])"
+        }
+      }
+    }
+  }
+}
